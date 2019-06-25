@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .content {
+            padding: 50px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+<div class="content">
+
+    Number1: <input type="text" id="txtNumber1" class="number" value="20">
+    Number2: <input type="text" id="txtNumber2" class="number" value="30">
+    <input type="button" value="Cong" onclick="cong();">
+
+    <br>
+
+    <select name="cars" id="ddlViewCars" onchange="change();">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+</div>
+
+<script>
+
+    function cong() {
+
+        //let number1 = document.getElementById("txtNumber1");
+        //alert(number1.value);
+
+        //let numbers = document.getElementsByClassName("number");
+        //alert(numbers[1].value);
+
+        //let numbers  = document.getElementsByTagName("input");
+        //alert(numbers[2].value);
+
+        //let numbers = document.querySelectorAll("input");
+        //alert(numbers[0].value);
+
+        //let number2 = document.getElementById("txtNumber2");
+        //alert(number2.parentElement.children[1].value);
+    }
+    
+    function change() {
+        var e = document.getElementById("ddlViewCars");
+        alert(e.options[e.selectedIndex].value);
+    }
+
+
+
+</script>
+</body>
+
+</html>
