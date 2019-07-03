@@ -3,60 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .content {
-            padding: 50px;
-        }
-    </style>
-    <script>
 
-    </script>
 </head>
-
 <body>
-
 <div class="content">
-
-    Number1: <input type="text" id="txtNumber1" class="number" value="20">
-    Number2: <input type="text" id="txtNumber2" class="number" value="30">
-    <input type="button" value="Cong" onclick="cong();">
-
-    <br>
-
-    <select name="cars" id="ddlViewCars" onchange="change();">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-    </select>
-
 </div>
-
 <script>
 
-    function cong() {
+    /*
 
-        //let number1 = document.getElementById("txtNumber1");
-        //alert(number1.value);
-
-        //let numbers = document.getElementsByClassName("number");
-        //alert(numbers[1].value);
-
-        //let numbers  = document.getElementsByTagName("input");
-        //alert(numbers[2].value);
-
-        //let numbers = document.querySelectorAll("input");
-        //alert(numbers[0].value);
-
-        //let number2 = document.getElementById("txtNumber2");
-        //alert(number2.parentElement.children[1].value);
-    }
-    
-    function change() {
-        var e = document.getElementById("ddlViewCars");
-        alert(e.options[e.selectedIndex].value);
+    function sumInterger(a, b) {
+        sum = 0;
+        for (var i = a; i <= b; i++) {
+            sum += i;
+        }
+        return sum;
     }
 
+
+    let sum1 = sumInterger(1, 2);
+    let sum2 = sumInterger(20, 37);
+    let sum3 = sumInterger(35, 49);
+
+    document.write(sum1 + " " + sum2 + " " + sum3);
+
+    */
+
+
+    /*
+
+    var sum1 = 0;
+    for (var i = 1; i <= 10; i++)
+        sum1 += i;
+    document.write("Sum from 1 to 10 is " + sum1+"</br>");
+
+
+    sum2 = 0;
+    for (var i = 20; i <= 37; i++)
+        sum2 += i;
+    document.write("Sum from 20 to 37 is " + sum2+"</br>");
+
+
+    sum3 = 0;
+    for (var i = 35; i <= 49; i++)
+        sum3 += i;
+    document.write("Sum from 35 to 49 is " + sum3);
+
+    */
+
+
+    /*
+
+    let arr = [[1, -3, 10, 20],
+        [3, 6, 10, -12],
+        [4, 5, -2, 9]];
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+        }
+    }
+    document.write(sum);
+
+    let arr1 = [[1, 3, 5, 7],
+        [2, 4, 6, 8],
+        [-1, 2, 5, 8]];
+    let sum1 = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        for (j = 0; j < arr1[i].length; j++) {
+            sum1 += arr1[i][j];
+        }
+    }
+    document.write(sum1);
+
+    */
+
+
+    /*function sumArr(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                sum += arr[i][j];
+            }
+        }
+        return sum;
+    }
+
+    let arr1 = [
+        [1, -3, 10, 20],
+        [3, 6, 10, -12],
+        [4, 5, -2, 9]
+    ];
+
+    let arr2 = [
+        [1, 3, 5, 7],
+        [2, 4, 6, 8],
+        [-1, 2, 5, 8]
+    ];
+
+    let sum1 = sumArr(arr1);
+
+    let sum2 = sumArr(arr2);
+
+    alert(sum1+" "+sum2);
+    */
+
+    /*
+
+    let arr = ["An", "Minh"];
+    let str = "Tung";
+
+    function pushArr() {
+        arr.push(str);
+        return arr;
+    }
+
+    let arr1 = pushArr();
+
+    console.log(arr1);
+
+*/
 
 
 </script>
