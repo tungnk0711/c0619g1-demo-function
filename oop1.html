@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    let Circle = function (radius) {
+        this.radius = radius;
+
+        this.getRadius = function () {
+            return radius;
+        };
+
+        this.getArea = function () {
+            return Math.PI * radius * radius;
+        }
+    };
+
+    let c1 = new Circle(3);
+    let radius = c1.getRadius();
+    console.log("Radius: "+radius);
+
+    let area = c1.getArea();
+    console.log("Area: "+area);
+
+
+
+    var circle = new Circle(2);
+    circle.getRadius(); // 2
+    circle.getArea(); // 12.566370614359172
+
+
+    let Matrix = function () {
+        this.row;
+        this.column;
+
+        this.getRow = function () {
+            return this.row;
+        };
+
+        this.setRow = function (row) {
+            this.row = row;
+        };
+
+        this.getColumn = function () {
+            return this.column;
+        };
+
+        this.setColumn = function (column) {
+            this.column = column;
+        };
+
+        this.sumArr = function (arr) {
+            let sum = 0;
+            for (let i = 0; i < this.row; i++) {
+                for (let j = 0; j < this.column; j++) {
+                    sum += arr[i][j];
+                }
+            }
+            return sum;
+        };
+    };
+
+
+    let matrix = new Matrix();
+    matrix.setRow(3);
+    matrix.setColumn(4);
+    let arr = [
+        [1, -3, 10, 20],
+        [3, 6, 10, -12],
+        [4, 5, -2, 9]
+    ];
+    let result = matrix.sumArr(arr);
+    console.log(result);
+
+
+    let matrix1 = new Matrix();
+    matrix1.setRow(2);
+    matrix1.setColumn(4);
+    let arr1 = [
+        [1, -3, 10, 20],
+        [3, 6, 10, -12]
+    ];
+    let result1 = matrix1.sumArr(arr1);
+    console.log(result1);
+
+
+    /*function sumArr(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                sum += arr[i][j];
+            }
+        }
+        return sum;
+    }
+
+    let arr1 = [
+        [1, -3, 10, 20],
+        [3, 6, 10, -12],
+        [4, 5, -2, 9]
+    ];
+
+    let arr2 = [
+        [1, 3, 5, 7],
+        [2, 4, 6, 8],
+        [-1, 2, 5, 8]
+    ];
+
+    let sum1 = sumArr(arr1);
+
+    let sum2 = sumArr(arr2);
+
+    alert(sum1 + " " + sum2);
+    */
+
+
+</script>
+
+</body>
+</html>
